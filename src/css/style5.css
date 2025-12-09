@@ -1,0 +1,49 @@
+.title {
+    font-size: 56.6px;
+}
+
+.title-wraps {
+    padding-top: 30px;
+}
+
+.title-pains {
+    margin-top: 30px;
+}
+
+
+.dejeuner {
+    margin-top: -10px;
+}
+
+.name {
+    font-size: 18px;
+}
+
+
+.wrap {
+    margin-left: 80px;
+}
+
+.omelette {
+    margin-left: 223px;
+}
+
+.carte {
+    margin-left: 180px;
+}
+
+.trio {
+    margin-left: 95px;
+}
+
+.extra-nom {
+    text-decoration: underline;
+}
+
+.name {
+    font-size: 25px;
+}
+
+.extra-nom {
+    font-size: 25px
+}
