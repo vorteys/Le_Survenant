@@ -1,0 +1,17 @@
+.title-poutine {
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+
+.titles {
+  font-family: 'Pacifico', cursive;
+  font-size: 75px;
+  color: red;
+  text-shadow: 2px 2px #000;
+  text-align: center;
+  width: 100%;
+}
+
+.test {
+    height: 100vh;
+}
