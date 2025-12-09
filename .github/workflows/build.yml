@@ -13,24 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout main
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Deploy to GitHub Pages
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions@github.com"
-
-          # Create deployment folder
-          mkdir deploy
-
-          # Copy all your site files (HTML/CSS/JS)
-          cp -r * deploy/
-
-          cd deploy
-          git init
-          git checkout -b public
+          git config --global user.name "Github-Actions[bot]"
+          git config --global user.email "github-actions@gmail.com"
+  
+          mkdir ../gh-pages
+          cp -r dist/* ../gh-pages
+  
+          cd ../gh-pages
+          git init 
+          git checkout -b gh-pages
           git add .
-          git commit -m "Deploy static site"
-
-          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" public
+          git commit -m "Deploy to Github Pages"
+  
+          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" gh-pages
