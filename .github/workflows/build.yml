@@ -22,7 +22,7 @@ jobs:
           git config --global user.email "github-actions@gmail.com"
   
           mkdir ../gh-pages
-          cp -r dist/* ../gh-pages
+          cp -r * ../gh-pages
   
           cd ../gh-pages
           git init 
